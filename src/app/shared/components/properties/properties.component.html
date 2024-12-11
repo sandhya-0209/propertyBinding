@@ -1,0 +1,58 @@
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+         <h1>Property Binding !!!</h1>
+         <p class="alert alert-success">
+          The company's newest product <strong>{{productName}}</strong> is selling well.
+         </p>
+         <p class="alert alert-danger">
+         The <strong>{{sports}}</strong> is the biggest sporting event in the world.
+         My favorite sport is <strong>{{name}}</strong>.
+         </p>
+         <p class="alert alert-info">
+            <strong>{{placeName}}</strong> is a popular hill station in the Sahyadri Hills of
+           the Western Ghats in <strong>{{stateName}}</strong>, India.
+         </p>
+        </div>
+    </div>
+</div>
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1>Festivals in India</h1>
+            <ul class="list-group">
+                <li class="list-group-item-success" [innerHTML]='festival1'>     
+                </li>
+                <li class="list-group-item-success" [innerHTML]='festival2'>     
+                </li>
+                <li class="list-group-item-success" [innerHTML]='festival3'>     
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card bg-secondary">
+                <div class="card-body">
+                    <input type="text" class="form-control mb-2" [value]="userName">
+                    <input type="text" class="form-control mb-2" [value]="class">
+                    <input type="text" class="form-control" [value]="collegeName">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row mb-5">
+        <div class="col-md-8 offset-md-2">
+            <div class="info d-flex justify-content-end">
+                <button [disabled]="!isFormNotValid" class="btn btn-info">Add Button</button>
+                <button [disabled]="!isFormNotValid" class="btn btn-danger ml-4">Remove Button</button>
+            </div>
+        </div>
+    </div>
+</div>
